@@ -1,0 +1,3 @@
+class XComPlayerController extends XComPlayerControllerNativeBase;
+
+var XComPresentationLayerBase m_Pres;

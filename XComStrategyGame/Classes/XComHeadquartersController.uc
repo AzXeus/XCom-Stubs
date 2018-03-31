@@ -1,0 +1,1 @@
+class XComHeadquartersController extends XComPlayerController;
