@@ -14,6 +14,10 @@ function ECharacter GetCommanderType()
 {
 }
 
+function XGShip_UFO GetUFO(int iUFOindex)
+{
+}
+
 function TAlienSquad DetermineFirstMissionSquad()
 {
 }
@@ -33,3 +37,6 @@ function TAlienSquad DetermineTerrorSquad()
 function TAlienSquad DetermineSpecialMissionSquad(ECharacter eChar, EFCMission eMission, bool bAssault)
 {
 }
+function OnUFOShotDown(XGShip_Interceptor kJet, XGShip_UFO kUFO){}
+function OnUFODestroyed(XGShip_UFO kUFO){}
+function OnUFOAttacked(XGShip_UFO kUFO){}
