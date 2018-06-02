@@ -1,5 +1,6 @@
 class XGStrategyActorNativeBase extends Actor
     native
+	config(GameData)
     notplaceable;
 
 enum EMissionDifficulty
@@ -178,6 +179,102 @@ enum EContinentBonus
     eCB_FutureCombat,
     eCB_Funding,
     eCB_Experts,
+	eCB_Experts_16777215,
+    eCB_Experts_33554431,
+    eCB_Experts_50331647,
+    eCB_Experts_67108863,
+    eCB_Experts_83886079,
+    eCB_Experts_100663295,
+    eCB_Experts_117440511,
+    eCB_Experts_134217727,
+    eCB_Experts_150994943,
+    eCB_Experts_167772159,
+    eCB_Experts_184549375,
+    eCB_Experts_201326591,
+    eCB_Experts_218103807,
+    eCB_Experts_234881023,
+    eCB_Experts_251658239,
+    eCB_Experts_268435455,
+    eCB_Experts_285212671,
+    eCB_Experts_301989887,
+    eCB_Experts_318767103,
+    eCB_Experts_335544319,
+    eCB_Experts_352321535,
+    eCB_Experts_369098751,
+    eCB_Experts_385875967,
+    eCB_Experts_402653183,
+    eCB_Experts_419430399,
+    eCB_Experts_436207615,
+    eCB_Experts_452984831,
+    eCB_Experts_469762047,
+    eCB_Experts_486539263,
+    eCB_Experts_503316479,
+    eCB_Experts_520093695,
+    eCB_Experts_536870911,
+    eCB_Experts_553648127,
+    eCB_Experts_570425343,
+    eCB_Experts_587202559,
+    eCB_Experts_603979775,
+    eCB_Experts_620756991,
+    eCB_Experts_637534207,
+    eCB_Experts_654311423,
+    eCB_Experts_671088639,
+    eCB_Experts_687865855,
+    eCB_Experts_704643071,
+    eCB_Experts_721420287,
+    eCB_Experts_738197503,
+    eCB_Experts_754974719,
+    eCB_Experts_771751935,
+    eCB_Experts_788529151,
+    eCB_Experts_805306367,
+    eCB_Experts_822083583,
+    eCB_Experts_838860799,
+    eCB_Experts_855638015,
+    eCB_Experts_872415231,
+    eCB_Experts_889192447,
+    eCB_Experts_905969663,
+    eCB_Experts_922746879,
+    eCB_Experts_939524095,
+    eCB_Experts_956301311,
+    eCB_Experts_973078527,
+    eCB_Experts_989855743,
+    eCB_Experts_1006632959,
+    eCB_Experts_1023410175,
+    eCB_Experts_1040187391,
+    eCB_Experts_1056964607,
+    eCB_Experts_1073741823,
+    eCB_Experts_1090519039,
+    eCB_Experts_1107296255,
+    eCB_Experts_1124073471,
+    eCB_Experts_1140850687,
+    eCB_Experts_1157627903,
+    eCB_Experts_1174405119,
+    eCB_Experts_1191182335,
+    eCB_Experts_1207959551,
+    eCB_Experts_1224736767,
+    eCB_Experts_1241513983,
+    eCB_Experts_1258291199,
+    eCB_Experts_1275068415,
+    eCB_Experts_1291845631,
+    eCB_Experts_1308622847,
+    eCB_Experts_1325400063,
+    eCB_Experts_1342177279,
+    eCB_Experts_1358954495,
+    eCB_Experts_1375731711,
+    eCB_Experts_1392508927,
+    eCB_Experts_1409286143,
+    eCB_Experts_1426063359,
+    eCB_Experts_1442840575,
+    eCB_Experts_1459617791,
+    eCB_Experts_1476395007,
+    eCB_Experts_1493172223,
+    eCB_Experts_1509949439,
+    eCB_Experts_1526726655,
+    eCB_Experts_1543503871,
+    eCB_Experts_1560281087,
+    eCB_Experts_1577058303,
+    eCB_Experts_1593835519,
+    eCB_Experts_1610612735,
     eCB_MAX
 };
 
@@ -503,7 +600,135 @@ enum ECityType
     eCity_Brasilia,
     eCity_Manaus,
     eCity_Fortaleza,
-    eCity_MAX
+    eCity_MAX_16777215,
+    eCity_MAX_33554431,
+    eCity_MAX_50331647,
+    eCity_MAX_67108863,
+    eCity_MAX_83886079,
+    eCity_MAX_100663295,
+    eCity_MAX_117440511,
+    eCity_MAX_134217727,
+    eCity_MAX_150994943,
+    eCity_MAX_167772159,
+    eCity_MAX_184549375,
+    eCity_MAX_201326591,
+    eCity_MAX_218103807,
+    eCity_MAX_234881023,
+    eCity_MAX_251658239,
+    eCity_MAX_268435455,
+    eCity_MAX_285212671,
+    eCity_MAX_301989887,
+    eCity_MAX_318767103,
+    eCity_MAX_335544319,
+    eCity_MAX_352321535,
+    eCity_MAX_369098751,
+    eCity_MAX_385875967,
+    eCity_MAX_402653183,
+    eCity_MAX_419430399,
+    eCity_MAX_436207615,
+    eCity_MAX_452984831,
+    eCity_MAX_469762047,
+    eCity_MAX_486539263,
+    eCity_MAX_503316479,
+    eCity_MAX_520093695,
+    eCity_MAX_536870911,
+    eCity_MAX_553648127,
+    eCity_MAX_570425343,
+    eCity_MAX_587202559,
+    eCity_MAX_603979775,
+    eCity_MAX_620756991,
+    eCity_MAX_637534207,
+    eCity_MAX_654311423,
+    eCity_MAX_671088639,
+    eCity_MAX_687865855,
+    eCity_MAX_704643071,
+    eCity_MAX_721420287,
+    eCity_MAX_738197503,
+    eCity_MAX_754974719,
+    eCity_MAX_771751935,
+    eCity_MAX_788529151,
+    eCity_MAX_805306367,
+    eCity_MAX_822083583,
+    eCity_MAX_838860799,
+    eCity_MAX_855638015,
+    eCity_MAX_872415231,
+    eCity_MAX_889192447,
+    eCity_MAX_905969663,
+    eCity_MAX_922746879,
+    eCity_MAX_939524095,
+    eCity_MAX_956301311,
+    eCity_MAX_973078527,
+    eCity_MAX_989855743,
+    eCity_MAX_1006632959,
+    eCity_MAX_1023410175,
+    eCity_MAX_1040187391,
+    eCity_MAX_1056964607,
+    eCity_MAX_1073741823,
+    eCity_MAX_1090519039,
+    eCity_MAX_1107296255,
+    eCity_MAX_1124073471,
+    eCity_MAX_1140850687,
+    eCity_MAX_1157627903,
+    eCity_MAX_1174405119,
+    eCity_MAX_1191182335,
+    eCity_MAX_1207959551,
+    eCity_MAX_1224736767,
+    eCity_MAX_1241513983,
+    eCity_MAX_1258291199,
+    eCity_MAX_1275068415,
+    eCity_MAX_1291845631,
+    eCity_MAX_1308622847,
+    eCity_MAX_1325400063,
+    eCity_MAX_1342177279,
+    eCity_MAX_1358954495,
+    eCity_MAX_1375731711,
+    eCity_MAX_1392508927,
+    eCity_MAX_1409286143,
+    eCity_MAX_1426063359,
+    eCity_MAX_1442840575,
+    eCity_MAX_1459617791,
+    eCity_MAX_1476395007,
+    eCity_MAX_1493172223,
+    eCity_MAX_1509949439,
+    eCity_MAX_1526726655,
+    eCity_MAX_1543503871,
+    eCity_MAX_1560281087,
+    eCity_MAX_1577058303,
+    eCity_MAX_1593835519,
+    eCity_MAX_1610612735,
+    eCity_MAX_1627389951,
+    eCity_MAX_1644167167,
+    eCity_MAX_1660944383,
+    eCity_MAX_1677721599,
+    eCity_MAX_1694498815,
+    eCity_MAX_1711276031,
+    eCity_MAX_1728053247,
+    eCity_MAX_1744830463,
+    eCity_MAX_1761607679,
+    eCity_MAX_1778384895,
+    eCity_MAX_1795162111,
+    eCity_MAX_1811939327,
+    eCity_MAX_1828716543,
+    eCity_MAX_1845493759,
+    eCity_MAX_1862270975,
+    eCity_MAX_1879048191,
+    eCity_MAX_1895825407,
+    eCity_MAX_1912602623,
+    eCity_MAX_1929379839,
+    eCity_MAX_1946157055,
+    eCity_MAX_1962934271,
+    eCity_MAX_1979711487,
+    eCity_MAX_1996488703,
+    eCity_MAX_2013265919,
+    eCity_MAX_2030043135,
+    eCity_MAX_2046820351,
+    eCity_MAX_2063597567,
+    eCity_MAX_2080374783,
+    eCity_MAX_2097151999,
+    eCity_MAX_2113929215,
+    eCity_MAX_2130706431,
+    eCity_MAX_2147483647,
+	eCity_MAX
 };
 
 enum EEntityGraphic
@@ -558,11 +783,323 @@ struct TItem
     var int iImage;
 };
 
+struct TFacility
+{
+    var string strName;
+    var EFacilityType eFacility;
+    var int iItem;
+    var int iCash;
+    var int iMaintenance;
+    var int iElerium;
+    var int iAlloys;
+    var int iSize;
+    var int iPower;
+    var int iTime;
+    var int iTechReq;
+    var int iItemReq;
+    var int iStructureReq;
+    var string strBriefSummary;
+    var string strDeepSummary;
+    var int iCategory;
+    var int iImage;
+
+    structdefaultproperties
+    {
+        strName=""
+        eFacility=EFacilityType.eFacility_None
+        iItem=0
+        iCash=0
+        iMaintenance=0
+        iElerium=0
+        iAlloys=0
+        iSize=0
+        iPower=0
+        iTime=0
+        iTechReq=0
+        iItemReq=0
+        iStructureReq=0
+        strBriefSummary=""
+        strDeepSummary=""
+        iCategory=0
+        iImage=0
+    }
+};
+
+struct TResearchCost
+{
+    var int iCash;
+    var int iElerium;
+    var int iAlloys;
+    var array<int> arrItems;
+    var array<int> arrItemQuantities;
+
+    structdefaultproperties
+    {
+        iCash=0
+        iElerium=0
+        iAlloys=0
+        arrItems=none
+        arrItemQuantities=none
+    }
+};
+
+struct TTech
+{
+    var string strName;
+    var int iTech;
+    var int iHours;
+    var bool bCustomReqs;
+    var int iItemReq;
+    var int iTechReq;
+    var int iContBonus;
+    var int iImage;
+    var string strSummary;
+    var string strReport;
+    var string strCustom;
+    var string strCodename;
+    var TResearchCost kCost;
+    var EResearchCredits eCreditGranted;
+
+    structdefaultproperties
+    {
+        strName=""
+        iTech=0
+        iHours=0
+        bCustomReqs=false
+        iItemReq=0
+        iTechReq=0
+        iContBonus=0
+        iImage=0
+        strSummary=""
+        strReport=""
+        strCustom=""
+        strCodename=""
+        kCost=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none)
+        eCreditGranted=EResearchCredits.eResearchCredit_None
+    }
+};
+
+struct TGeneModTech
+{
+    var string strName;
+    var EGeneModTech eGeneTech;
+    var ETechType eTechReq;
+    var int iHours;
+    var int iMeld;
+    var int iCash;
+    var EPerkType ePerk;
+
+    structdefaultproperties
+    {
+        strName=""
+        eGeneTech=EGeneModTech.eGeneMod_None
+        eTechReq=ETechType.eTech_None
+        iHours=0
+        iMeld=0
+        iCash=0
+        ePerk=EPerkType.ePerk_None
+    }
+};
+
+struct TFoundryTech
+{
+    var string strName;
+    var int iFoundryTech;
+    var int iHours;
+    var int iCash;
+    var int iElerium;
+    var int iAlloys;
+    var int iEngineers;
+    var int iItemReq;
+    var int iTechReq;
+    var int iImage;
+    var string strSummary;
+    var TResearchCost kCost;
+
+    structdefaultproperties
+    {
+        strName=""
+        iFoundryTech=0
+        iHours=0
+        iCash=0
+        iElerium=0
+        iAlloys=0
+        iEngineers=0
+        iItemReq=0
+        iTechReq=0
+        iImage=0
+        strSummary=""
+        kCost=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none)
+    }
+};
+
+struct TResearchCredit
+{
+    var EResearchCredits eCreditType;
+    var int iBonus;
+    var string strName;
+    var string strSummary;
+    var int iImage;
+
+    structdefaultproperties
+    {
+        eCreditType=EResearchCredits.eResearchCredit_None
+        iBonus=0
+        strName=""
+        strSummary=""
+        iImage=0
+    }
+};
+
+struct TOTSTech
+{
+    var string strName;
+    var int iOTSTech;
+    var int iRankRequired;
+    var int iCash;
+    var int iNumCombos;
+    var int iComboType;
+    var int iImage;
+    var string strSummary;
+
+    structdefaultproperties
+    {
+        strName=""
+        iOTSTech=0
+        iRankRequired=0
+        iCash=0
+        iNumCombos=0
+        iComboType=0
+        iImage=0
+        strSummary=""
+    }
+};
+
+struct TContinentBonus
+{
+    var int iImage;
+    var string strTitle;
+    var string strDesc;
+
+    structdefaultproperties
+    {
+        iImage=0
+        strTitle=""
+        strDesc=""
+    }
+};
+
+struct TCountry
+{
+    var int iEnum;
+    var string strName;
+    var string strNameWithArticle;
+    var string strNameWithArticleLower;
+    var string strNamePossessive;
+    var string strNameAdjective;
+    var int iContinent;
+    var int iFunding;
+    var int iScience;
+    var int iEngineering;
+    var bool bDeveloped;
+    var bool bCouncilMember;
+
+    structdefaultproperties
+    {
+        iEnum=0
+        strName=""
+        strNameWithArticle=""
+        strNameWithArticleLower=""
+        strNamePossessive=""
+        strNameAdjective=""
+        iContinent=0
+        iFunding=0
+        iScience=0
+        iEngineering=0
+        bDeveloped=false
+        bCouncilMember=false
+    }
+};
+
 struct TStaffOrder
 {
     var int iNumStaff;
     var int iStaffType;
     var int iHours;
+};
+
+struct TShipUIInfo
+{
+    var TText txtName;
+    var TText txtStatus;
+    var TText txtKills;
+    var TText txtWeapons;
+    var TText txtArmor;
+    var TText txtEngines;
+    var TText txtSpeed;
+    var TText txtFuel;
+    var TText txtRange;
+
+    structdefaultproperties
+    {
+        txtName=(StrValue="",iState=0)
+        txtStatus=(StrValue="",iState=0)
+        txtKills=(StrValue="",iState=0)
+        txtWeapons=(StrValue="",iState=0)
+        txtArmor=(StrValue="",iState=0)
+        txtEngines=(StrValue="",iState=0)
+        txtSpeed=(StrValue="",iState=0)
+        txtFuel=(StrValue="",iState=0)
+        txtRange=(StrValue="",iState=0)
+    }
+};
+
+struct TShipOrder
+{
+    var int iNumInterceptors;
+    var int iDestinationContinent;
+    var int iShipType;
+    var int iHours;
+
+    structdefaultproperties
+    {
+        iNumInterceptors=0
+        iDestinationContinent=0
+        iShipType=0
+        iHours=0
+    }
+};
+
+struct TShipTransfer
+{
+    var int iNumShips;
+    var int iShipType;
+    var int iDestination;
+    var int iHours;
+
+    structdefaultproperties
+    {
+        iNumShips=0
+        iShipType=0
+        iDestination=0
+        iHours=0
+    }
+};
+
+struct TInterceptMission
+{
+    var XGShip_UFO kUFOTarget;
+    var array<XGShip_Interceptor> arrInterceptors;
+    var int iInterceptMode;
+    var int iInterceptResult;
+
+    structdefaultproperties
+    {
+        kUFOTarget=none
+        arrInterceptors=none
+        iInterceptMode=0
+        iInterceptResult=0
+    }
 };
 
 struct TMonthlySummary
@@ -595,6 +1132,305 @@ struct TMonthlySummary
     var array<int> arrCountriesJoining;
     var array<int> arrCountriesLeaving;
     var array<int> arrCountriesAdding;
+};
+
+struct TSubObjective
+{
+    var ESubObjective eType;
+    var string strObjective;
+    var string strInDepth;
+    var EObjectiveStatus eStatus;
+
+    structdefaultproperties
+    {
+        eType=ESubObjective.eSubObj_BuildAlienContainment
+        strObjective=""
+        strInDepth=""
+        eStatus=EObjectiveStatus.eObjStatus_NotStarted
+    }
+};
+
+struct TProjectCost
+{
+    var int iCash;
+    var int iElerium;
+    var int iAlloys;
+    var array<int> arrItems;
+    var array<int> arrItemQuantities;
+    var int iStaffTypeReq;
+    var int iStaffNumReq;
+    var int iBarracksReq;
+
+    structdefaultproperties
+    {
+        iCash=0
+        iElerium=0
+        iAlloys=0
+        arrItems=none
+        arrItemQuantities=none
+        iStaffTypeReq=0
+        iStaffNumReq=0
+        iBarracksReq=0
+    }
+};
+
+struct TCostSummary
+{
+    var array<TText> arrRequirements;
+    var string strHelp;
+
+    structdefaultproperties
+    {
+        arrRequirements=none
+        strHelp=""
+    }
+};
+
+struct TObjectSummary
+{
+    var TImage imgObject;
+    var TText txtRequirementsLabel;
+    var TText txtSummary;
+    var TCostSummary kCost;
+    var bool bCanAfford;
+    var int ItemType;
+
+    structdefaultproperties
+    {
+        imgObject=(iImage=0,strLabel="",iState=0,strPath="")
+        txtRequirementsLabel=(StrValue="",iState=0)
+        txtSummary=(StrValue="",iState=0)
+        kCost=(arrRequirements=none,strHelp="")
+        bCanAfford=false
+        ItemType=0
+    }
+};
+
+struct TItemProject
+{
+    var int iIndex;
+    var EItemType eItem;
+    var int iEngineers;
+    var int iMaxEngineers;
+    var int iQuantity;
+    var int iQuantityLeft;
+    var int iHoursLeft;
+    var bool bNotify;
+    var bool Brush;
+    var bool bAdjusted;
+    var TProjectCost kRebate;
+    var TProjectCost kOriginalCost;
+
+    structdefaultproperties
+    {
+        iIndex=0
+        eItem=EItemType.eItem_NONE
+        iEngineers=0
+        iMaxEngineers=0
+        iQuantity=0
+        iQuantityLeft=0
+        iHoursLeft=0
+        bNotify=false
+        Brush=false
+        bAdjusted=false
+        kRebate=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+        kOriginalCost=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+    }
+};
+struct TFacilityProject
+{
+    var EFacilityType eFacility;
+    var int iHoursLeft;
+    var bool bNotify;
+    var bool Brush;
+    var int X;
+    var int Y;
+    var int iIndex;
+    var TProjectCost kRebate;
+    var TProjectCost kOriginalCost;
+
+    structdefaultproperties
+    {
+        eFacility=EFacilityType.eFacility_None
+        iHoursLeft=0
+        bNotify=false
+        Brush=false
+        X=0
+        Y=0
+        iIndex=0
+        kRebate=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+        kOriginalCost=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+    }
+};
+
+struct TFoundryProject
+{
+    var int eTech;
+    var int iEngineers;
+    var int iMaxEngineers;
+    var int iHoursLeft;
+    var bool Brush;
+    var bool bNotify;
+    var int iIndex;
+    var bool bAdjusted;
+    var TProjectCost kRebate;
+    var TProjectCost kOriginalCost;
+
+    structdefaultproperties
+    {
+        eTech=0
+        iEngineers=0
+        iMaxEngineers=0
+        iHoursLeft=0
+        Brush=false
+        bNotify=false
+        iIndex=0
+        bAdjusted=false
+        kRebate=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+        kOriginalCost=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+    }
+};
+
+struct TAlloyProject
+{
+    var int iEngineers;
+    var int iHoursLeft;
+    var int iAlloyHoursLeft;
+    var int iAlloysProduced;
+    var bool bNotify;
+    var int iIndex;
+    var TProjectCost kRebate;
+
+    structdefaultproperties
+    {
+        iEngineers=0
+        iHoursLeft=0
+        iAlloyHoursLeft=0
+        iAlloysProduced=0
+        bNotify=false
+        iIndex=0
+        kRebate=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+    }
+};
+
+struct TConstructionProject
+{
+    var int iProjectType;
+    var int iHoursLeft;
+    var int iIndex;
+    var int X;
+    var int Y;
+    var TProjectCost kRebate;
+
+    structdefaultproperties
+    {
+        iProjectType=0
+        iHoursLeft=0
+        iIndex=0
+        X=0
+        Y=0
+        kRebate=(iCash=0,iElerium=0,iAlloys=0,arrItems=none,arrItemQuantities=none,iStaffTypeReq=0,iStaffNumReq=0,iBarracksReq=0)
+    }
+};
+
+struct TEngQueueItem
+{
+    var bool bItem;
+    var bool bFoundry;
+    var int iIndex;
+
+    structdefaultproperties
+    {
+        bItem=false
+        bFoundry=false
+        iIndex=0
+    }
+};
+
+struct TGameObjective
+{
+    var EGameObjective eType;
+    var EObjectiveStatus eStatus;
+    var string strName;
+    var XGTacticalScreenMgr.EImage eObjImage;
+    var array<TSubObjective> arrSubObjectives;
+
+    structdefaultproperties
+    {
+        eType=EGameObjective.eObj_None
+        eStatus=EObjectiveStatus.eObjStatus_NotStarted
+        strName=""
+        eObjImage=EImage.eImage_None
+        arrSubObjectives=none
+    }
+};
+
+struct THQAnimCharacter
+{
+    var EHQAnimCharacter eChar;
+    var int iData;
+
+    structdefaultproperties
+    {
+        eChar=EHQAnimCharacter.eHQAnimChar_None
+        iData=0
+    }
+};
+
+struct THQAnim
+{
+    var EHQAnimType eType;
+    var EHQAnimLocation ELocation;
+    var array<THQAnimCharacter> arrChars;
+
+    structdefaultproperties
+    {
+        eType=EHQAnimType.eHQAnim_None
+        ELocation=EHQAnimLocation.eHQAnimLoc_None
+        arrChars=none
+    }
+};
+
+struct TSatBonus
+{
+    var int iNumScientists;
+    var int iNumEngineers;
+
+    structdefaultproperties
+    {
+        iNumScientists=0
+        iNumEngineers=0
+    }
+};
+
+struct TSatellite
+{
+    var int iType;
+    var Vector2D v2Loc;
+    var XGEntity kSatEntity;
+    var int iCountry;
+    var int iTravelTime;
+
+    structdefaultproperties
+    {
+        iType=0
+        v2Loc=(X=0.0,Y=0.0)
+        kSatEntity=none
+        iCountry=0
+        iTravelTime=0
+    }
+};
+
+struct TSatNode
+{
+    var Vector2D v2Coords;
+    var int iCountry;
+
+    structdefaultproperties
+    {
+        v2Coords=(X=0.0,Y=0.0)
+        iCountry=0
+    }
 };
 
 struct TCouncilMeeting
@@ -638,6 +1474,50 @@ struct TMissionResult
     var bool bSuccess;
 };
 
+struct TObjective
+{
+    var EAlienObjective eType;
+    var string strName;
+    var string strEOMDescription;
+    var bool bAbandon;
+    var array<int> arrStartDates;
+    var array<EShipType> arrUFOs;
+    var array<EUFOMission> arrMissions;
+    var array<int> arrRadii;
+    var array<int> arrRandDays;
+
+    structdefaultproperties
+    {
+        eType=EAlienObjective.eObjective_Recon
+        strName=""
+        strEOMDescription=""
+        bAbandon=false
+        arrStartDates=none
+        arrUFOs=none
+        arrMissions=none
+        arrRadii=none
+        arrRandDays=none
+    }
+};
+
+struct TUFORecord
+{
+    var EShipType eUFO;
+    var EAlienObjective eObjective;
+    var ECountry ECountry;
+    var EUFOMissionResult eResult;
+    var int iMonth;
+
+    structdefaultproperties
+    {
+        eUFO=EShipType.eShip_None
+        eObjective=EAlienObjective.eObjective_Recon
+        ECountry=ECountry.eCountry_USA
+        eResult=EUFOMissionResult.eUMR_Undetected
+        iMonth=0
+    }
+};
+
 struct TShip
 {
     var string strName;
@@ -653,17 +1533,226 @@ struct TShip
     var array<int> arrWeapons;
     var int iImage;
 };
+struct TShipWeapon
+{
+    var string strName;
+    var EShipWeapon eType;
+    var int iAmmo;
+    var float fFiringTime;
+    var int iRange;
+    var int iDamage;
+    var int iAP;
+    var int iToHit;
+
+    structdefaultproperties
+    {
+        strName=""
+        eType=EShipWeapon.eShipWeapon_None
+        iAmmo=0
+        fFiringTime=0.0
+        iRange=0
+        iDamage=0
+        iAP=0
+        iToHit=0
+    }
+};
+struct TGeoscapeAlert
+{
+    var EGeoscapeAlert eType;
+    var array<int> arrData;
+
+    structdefaultproperties
+    {
+        eType=eGA_UFODetected
+        arrData=none
+    }
+};
+
+struct THQEvent
+{
+    var eHQEvent EEvent;
+    var int iData;
+    var int iHours;
+    var int iData2;
+
+    structdefaultproperties
+    {
+        EEvent=eHQEvent.eHQEvent_Research
+        iData=0
+        iHours=0
+        iData2=0
+    }
+};
+
+var config int START_DAY;
+var config int START_MONTH;
+var config int START_YEAR;
+var config int LOSE_CONDITION_NUM_DESERTERS;
+var config int HQASSAULT_REINFORCEMENT_CAPACITY;
+var config int BLUESHIRT_WILL_MOD;
+var config int BLUESHIRT_HP_MOD;
+var config int BLUESHIRT_AIM_MOD;
+
+function Achieve(XComOnlineEventMgr.EAchievementType eAchievement)
+{  
+}
+
+function XGSoundMgr Sound()
+{
+}
+
+function XComHQSoundCollection SNDLIB()
+{ 
+}
+
+function bool ISCONTROLLED()
+{   
+}
+
+function XGWorld World()
+{   
+}
+
+function XGStrategyAI AI()
+{
+}
 
 function XGStrategy Game()
-{
+{    
+}
+
+function XGTacticalGameCore TACTICAL()
+{  
 }
 
 function XGHeadQuarters HQ()
+{   
+}
+
+function XGGeoscape GEOSCAPE()
+{ 
+}
+
+function XComHQPresentationLayer PRES()
+{ 
+}
+
+function XGBase Base()
+{   
+}
+
+function XGFacility_Barracks BARRACKS()
+{ 
+}
+
+function XGFacility_Labs LABS()
+{  
+}
+
+function XGFacility_Engineering ENGINEERING()
 {
 }
 
-function int STAT_GetStat(ERecapStats eStat)
+function XGStorage STORAGE()
+{    
+}
+
+function XGFacility_Lockers LOCKERS()
+{   
+}
+
+function XGFacility_PsiLabs PSILABS(){}
+
+function XGFacility_GeneLabs GENELABS(){}
+
+function XGFacility_CyberneticsLab CYBERNETICSLAB()
+{ 
+}
+
+function XGFacility_Hangar HANGAR()
+{  
+}
+
+function XGFacility_GollopChamber GOLLOP(){}
+
+
+function XGFacility_SituationRoom SITROOM(){}
+
+function XGObjectiveManager OBJECTIVES(){}
+
+
+function TItem Item(int iItemType, optional int iTransactionType)
+{ 
+}
+
+function TFacility Facility(int iFacilityType, optional bool bRushConstruction)
+{  
+}
+
+function TItem STAFF(int iStaffType)
+{    
+}
+
+function XGItemTree ITEMTREE(){ }
+
+function TShipWeapon SHIPWEAPON(int iWeaponType)
 {
+}
+
+function TTech TECH(int iTechType)
+{   
+}
+
+function TFoundryTech FTECH(int iFoundryTechType, optional bool bRushResearch)
+{
+}
+
+function TResearchCredit CREDIT(int iCredit)
+{
+}
+
+function XGTechTree TECHTREE(){}
+
+
+function XComPerkManager perkMgr()
+{   
+}
+
+function XGSetupPhaseManager SETUPMGR(){}
+
+function XGCity CITY(int iCity){}
+
+
+function XGContinent Continent(int iContinent)
+{   
+}
+
+function XGCountry Country(int iCountry)
+{  
+}
+
+function bool Roll(int iChance)
+{  
+}
+
+function int STAT_GetStat(ERecapStats eStat)
+{  
+}
+
+function float STAT_GetAvgStat(ERecapStats eCountStat, ERecapStats eSumStat)
+{ 
+}
+
+function float STAT_AddAvgStat(ERecapStats eCountStat, ERecapStats eSumStat, int Value)
+{  
+}
+
+function string STAT_GetWorldStat(ERecapStats eStat)
+{  
+}
+
+function string STAT_GetWorldAvgStat(ERecapStats eCountStat, ERecapStats eSumStat)
+{   
 }
 
 function STAT_AddStat(ERecapStats eStat, optional int Value)
@@ -674,47 +1763,24 @@ function STAT_SetStat(ERecapStats eStat, int Value)
 {
 }
 
+function STAT_AddProfileStat(EProfileStats eStat, int Value)
+{
+}
+
+function STAT_SetProfileStat(EProfileStats eStat, int Value)
+{
+}
+
+function int STAT_GetProfileStat(EProfileStats eStat)
+{ 
+}
+
 function XGRecapSaveData GetRecapSaveData()
-{
+{   
 }
 
-function XGFacility_Labs LABS() 
-{
-	return ReturnValue;
+function bool IsOptionEnabled(EGameplayOption eOption)
+{   
 }
 
-function XComPerkManager perkMgr()
-{
-	return XComHeadquartersGame(class'Engine'.static.GetCurrentWorldInfo().Game).GetGameCore().GetHQ().GetBarracks().m_kPerkManager;
-}
-
-function bool IsOptionEnabled(XGGameData.EGameplayOption eOption)
-{
-	return ReturnValue;
-}
-
-function XComHQPresentationLayer PRES() {}
-
-function XGFacility_Lockers LOCKERS() {}
-
-function XGTacticalGameCore TACTICAL() {}
-
-function XGFacility_Barracks BARRACKS()
-{
-}
-
-function XGGeoscape GEOSCAPE()
-{
-}
-
-function XGStorage STORAGE()
-{
-}
-
-function TItem STAFF(int iStaffType)
-{
-}
-
-function XGFacility_Engineering ENGINEERING()
-{
-}
+native function SortSoldierArray(out array<XGStrategySoldier> Soldiers);
