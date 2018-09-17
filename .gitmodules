@@ -1,0 +1,3 @@
+[submodule "XCom-Stubs"]
+	path = XCom-Stubs
+	url = https://github.com/AzXeus/XCom-Stubs.git
