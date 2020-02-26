@@ -12,6 +12,46 @@ struct TMCMission
     var Color clrOption;
 };
 
+struct TMCAlert
+{
+    var int iAlertType;
+    var TText txtTitle;
+    var array<TText> arrText;
+    var array<TLabeledText> arrLabeledText;
+    var TMenu mnuReplies;
+    var TImage imgAlert;
+    var TImage imgAlert2;
+    var TImage imgAlert3;
+    var int iNumber;
+
+    structdefaultproperties
+    {
+        iAlertType=0
+        txtTitle=(StrValue="",iState=0)
+        arrText=none
+        arrLabeledText=none
+        mnuReplies=(strLabel="",arrOptions=none,bTakesNoInput=false)
+        imgAlert=(iImage=0,strLabel="",iState=0,strPath="")
+        imgAlert2=(iImage=0,strLabel="",iState=0,strPath="")
+        imgAlert3=(iImage=0,strLabel="",iState=0,strPath="")
+        iNumber=0
+    }
+};
+
+struct TMCMission
+{
+    var TImage imgOption;
+    var TButtonText txtOption;
+    var Color clrOption;
+
+    structdefaultproperties
+    {
+        imgOption=(iImage=0,strLabel="",iState=0,strPath="")
+        txtOption=(StrValue="",iState=0,iButton=0)
+        clrOption=(R=0,G=0,B=0,A=0)
+    }
+};
+
 struct TMCMenu
 {
     var TButtonText txtChooseButton;

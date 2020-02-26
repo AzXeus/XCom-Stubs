@@ -8,6 +8,6 @@ function XGPlayer GetAIPlayer()
 {
 }
 
-function array<XComSpawnPoint> GetSpawnPoints(Object.ETeam eUnitTeam, optional int iNumSpawnPoints)
+function array<XComSpawnPoint> GetSpawnPoints(byte eUnitTeam, optional int iNumSpawnPoints)
 {
 }
