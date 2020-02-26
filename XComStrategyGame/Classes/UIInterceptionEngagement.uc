@@ -135,7 +135,7 @@ simulated function ActivateAimAbility(){}
 simulated function ActivateTrackAbility(){}
 simulated event Tick(float fDeltaT){}
 simulated function Playback(float fDeltaT){}
-simulated function int GetWeaponType(CombatExchange kCombatExchange){}
+simulated function int GetWeaponType(XGInterceptionEngagement.CombatExchange kCombatExchange){}
 simulated function UpdateEnemyEscapeTimer(float fDeltaT){}
 simulated function ShowResultScreen(){}
 final simulated function SetConsumablesState(optional int stateOverride){}
