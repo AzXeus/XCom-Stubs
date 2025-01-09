@@ -287,10 +287,15 @@ __pycache__/
 *.odx.cs
 *.xsd.cs
 
+/*
+!Src
+Src/*
 
+!Src/XComShell/
+!Src/XComGame/
+!Src/XComStrategyGame/
+!Src/XComUIShell/
 
-*
-
-!/XComShell/
-!/XComGame/
-!/XComStrategyGame/
+!Src/XCom.ucproj
+!.gitignore
+!README.md
