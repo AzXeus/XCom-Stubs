@@ -62,17 +62,6 @@ struct native TSoldierStatProgression
     var int iDefense;
     var int iWill;
     var int iMobility;
-
-    structdefaultproperties
-    {
-        eRank=ESoldierRanks.eRank_Rookie
-        eClass=ESoldierClass.eSC_None
-        iHP=0
-        iAim=0
-        iDefense=0
-        iWill=0
-        iMobility=0
-    }
 };
 
 enum EPerkType
@@ -287,46 +276,6 @@ struct native TClass
     var XGTacticalGameCoreData.EWeaponProperty eWeaponType;
     var int aAbilities[16];
     var int aAbilityUnlocks[16];
-
-    structdefaultproperties
-    {
-        strName=""
-        eType=ESoldierClass.eSC_None
-        eTemplate=0
-        eWeaponType=EWeaponProperty.eWP_None
-        aAbilities[0]=0
-        aAbilities[1]=0
-        aAbilities[2]=0
-        aAbilities[3]=0
-        aAbilities[4]=0
-        aAbilities[5]=0
-        aAbilities[6]=0
-        aAbilities[7]=0
-        aAbilities[8]=0
-        aAbilities[9]=0
-        aAbilities[10]=0
-        aAbilities[11]=0
-        aAbilities[12]=0
-        aAbilities[13]=0
-        aAbilities[14]=0
-        aAbilities[15]=0
-        aAbilityUnlocks[0]=0
-        aAbilityUnlocks[1]=0
-        aAbilityUnlocks[2]=0
-        aAbilityUnlocks[3]=0
-        aAbilityUnlocks[4]=0
-        aAbilityUnlocks[5]=0
-        aAbilityUnlocks[6]=0
-        aAbilityUnlocks[7]=0
-        aAbilityUnlocks[8]=0
-        aAbilityUnlocks[9]=0
-        aAbilityUnlocks[10]=0
-        aAbilityUnlocks[11]=0
-        aAbilityUnlocks[12]=0
-        aAbilityUnlocks[13]=0
-        aAbilityUnlocks[14]=0
-        aAbilityUnlocks[15]=0
-    }
 };
 
 struct native TSoldier
@@ -344,23 +293,6 @@ struct native TSoldier
     var TAppearance kAppearance;
     var TClass kClass;
     var bool bBlueshirt;
-
-    structdefaultproperties
-    {
-        iID=0
-        strFirstName=""
-        strLastName=""
-        strNickName=""
-        iRank=0
-        iPsiRank=0
-        iCountry=0
-        iXP=0
-        iPsiXP=0
-        iNumKills=0
-        kAppearance=(iHead=-1,iGender=0,iRace=0,iHaircut=-1,iHairColor=0,iFacialHair=0,iBody=-1,iBodyMaterial=-1,iSkinColor=-1,iEyeColor=-1,iFlag=-1,iArmorSkin=-1,iVoice=-1,iLanguage=0,iAttitude=0,iArmorDeco=-1,iArmorTint=-1)
-        kClass=(strName="",eType=ESoldierClass.eSC_None,eTemplate=0,eWeaponType=EWeaponProperty.eWP_None,aAbilities=0,aAbilities[1]=0,aAbilities[2]=0,aAbilities[3]=0,aAbilities[4]=0,aAbilities[5]=0,aAbilities[6]=0,aAbilities[7]=0,aAbilities[8]=0,aAbilities[9]=0,aAbilities[10]=0,aAbilities[11]=0,aAbilities[12]=0,aAbilities[13]=0,aAbilities[14]=0,aAbilities[15]=0,aAbilityUnlocks=0,aAbilityUnlocks[1]=0,aAbilityUnlocks[2]=0,aAbilityUnlocks[3]=0,aAbilityUnlocks[4]=0,aAbilityUnlocks[5]=0,aAbilityUnlocks[6]=0,aAbilityUnlocks[7]=0,aAbilityUnlocks[8]=0,aAbilityUnlocks[9]=0,aAbilityUnlocks[10]=0,aAbilityUnlocks[11]=0,aAbilityUnlocks[12]=0,aAbilityUnlocks[13]=0,aAbilityUnlocks[14]=0,aAbilityUnlocks[15]=0)
-        bBlueshirt=false
-    }
 };
 
 struct native TConfigCharacter extends TCharacter

@@ -4,12 +4,6 @@ struct TText
 {
     var string StrValue;
     var int iState;
-
-    structdefaultproperties
-    {
-        StrValue=""
-        iState=0
-    }
 };
 
 struct TLabeledText
@@ -18,26 +12,12 @@ struct TLabeledText
     var string strLabel;
     var int iState;
     var bool bNumber;
-
-    structdefaultproperties
-    {
-        StrValue=""
-        strLabel=""
-        iState=0
-        bNumber=false
-    }
 };
 
 struct TTableMenuHeader
 {
     var array<string> arrStrings;
     var array<int> arrStates;
-
-    structdefaultproperties
-    {
-        arrStrings=none
-        arrStates=none
-    }
 };
 
 struct TTableMenuOption
@@ -46,14 +26,6 @@ struct TTableMenuOption
     var array<int> arrStates;
     var int iState;
     var string strHelp;
-
-    structdefaultproperties
-    {
-        arrStrings=none
-        arrStates=none
-        iState=0
-        strHelp=""
-    }
 };
 
 struct TTableMenu
@@ -62,14 +34,6 @@ struct TTableMenu
     var TTableMenuHeader kHeader;
     var array<TTableMenuOption> arrOptions;
     var bool bTakesNoInput;
-
-    structdefaultproperties
-    {
-        arrCategories=none
-        kHeader=(arrStrings=none,arrStates=none)
-        arrOptions=none
-        bTakesNoInput=false
-    }
 };
 
 

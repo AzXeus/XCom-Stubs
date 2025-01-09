@@ -56,15 +56,6 @@ struct native XComInteractPoint
     var XComInteractiveLevelActor InteractiveActor;
     var name InteractSocketName;
     var int ModifyTileStaticFlags;
-
-    structdefaultproperties
-    {
-        Location=(X=0.0,Y=0.0,Z=0.0)
-        Rotation=(Pitch=0,Yaw=0,Roll=0)
-        InteractiveActor=none
-        InteractSocketName=None
-        ModifyTileStaticFlags=0
-    }
 };
 
 var Box WorldBounds;

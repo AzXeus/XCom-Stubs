@@ -8,5 +8,4 @@ function XGStrategy GetGameCore()
 
 defaultproperties
 {
-    StrategySaveGameClass=class'Checkpoint_StrategyGame'
 }

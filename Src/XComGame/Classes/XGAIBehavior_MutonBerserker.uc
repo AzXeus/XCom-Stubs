@@ -74,5 +74,4 @@ state IgnoreCoverMove
     simulated event BeginState(name P)
     {
     }
-    stop;    
 }

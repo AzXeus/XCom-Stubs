@@ -22,5 +22,4 @@ state InHQ
 
 	function FindPossibleCustomParts(const out TCharacter inCharacter) {}
 
-	stop;
 }

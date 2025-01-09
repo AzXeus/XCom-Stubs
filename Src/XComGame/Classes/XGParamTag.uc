@@ -10,8 +10,3 @@ var string StrValue2;
 
 // Export UXGParamTag::execExpand(FFrame&, void* const)
 native function bool Expand(string InString, out string OutString);
-
-defaultproperties
-{
-    Tag="XGParam"
-}

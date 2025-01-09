@@ -19,10 +19,4 @@ var() bool m_bBeginCountdownWhenSeen;
 
 defaultproperties
 {
-    m_iDestroyedOnTurn=3
-    Components(0)=none
-    Components(1)=none
-    bTickIsDisabled=true
-    bMovable=false
-    bCollideWhenPlacing=true
 }

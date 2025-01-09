@@ -10,5 +10,4 @@ event Activated()
 
 defaultproperties
 {
-    ObjName="Special Mission Handler Goto State"
 }
