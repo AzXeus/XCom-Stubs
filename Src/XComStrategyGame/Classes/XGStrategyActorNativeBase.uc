@@ -654,6 +654,18 @@ struct TShip
     var int iImage;
 };
 
+struct TShipWeapon
+{
+    var string strName;
+    var XGStrategyActorNativeBase.EShipWeapon eType;
+    var int iAmmo;
+    var float fFiringTime;
+    var int iRange;
+    var int iDamage;
+    var int iAP;
+    var int iToHit;
+};
+
 function XGStrategy Game()
 {
 }

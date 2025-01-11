@@ -749,6 +749,35 @@ enum EGameplayOption
 	eGO_MAX
 };
 
+enum EFacilityType
+{
+    eFacility_None,
+    eFacility_Hangar,
+    eFacility_MissionControl,
+    eFacility_Barracks,
+    eFacility_Research,
+    eFacility_Engineering,
+    eFacility_AccessLift,
+    eFacility_ScienceLab,
+    eFacility_Workshop,
+    eFacility_SmallRadar,
+    eFacility_Power,
+    eFacility_Foundry,
+    eFacility_OTS,
+    eFacility_AlienContain,
+    eFacility_LargeRadar,
+    eFacility_ThermalPower,
+    eFacility_EleriumGenerator,
+    eFacility_PsiLabs,
+    eFacility_HyperwaveRadar,
+    eFacility_DeusEx,
+    eFacility_GreyMarket,
+    eFacility_SitRoom,
+    eFacility_CyberneticsLab,
+    eFacility_GeneticsLab,
+    eFacility_MAX
+};
+
 struct native TAlienPod
 {
     var XGGameData.EAlienPodType eType;

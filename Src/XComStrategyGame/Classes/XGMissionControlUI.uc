@@ -5,11 +5,24 @@ class XGMissionControlUI extends XGScreenMgr
     implements(IFCRequestInterface)
 	DependsOn(XGFundingCouncil);
 
-struct TMCMission
+enum eHQEvent
 {
-    var TImage imgOption;
-    var TButtonText txtOption;
-    var Color clrOption;
+    eHQEvent_Research,
+    eHQEvent_ItemProject,
+    eHQEvent_Facility,
+    eHQEvent_Foundry,
+    eHQEvent_EndOfMonth,
+    eHQEvent_Hiring,
+    eHQEvent_InterceptorOrdering,
+    eHQEvent_ShipTransfers,
+    eHQEvent_PsiTraining,
+    eHQEvent_GeneModification,
+    eHQEvent_CyberneticModification,
+    eHQEvent_MecRepair,
+    eHQEvent_FCRequest,
+    eHQEvent_SatOperational,
+    eHQEvent_CovertOperative,
+    eHQEvent_MAX
 };
 
 struct TMCAlert
@@ -51,6 +64,14 @@ struct TMCEvent
     var int iAdditionalData;
 };
 
+struct THQEvent
+{
+    var eHQEvent EEvent;
+    var int iData;
+    var int iHours;
+    var int iData2;
+};
+
 struct TMCEventMenu
 {
     var TButtonText txtFFButton;
@@ -60,19 +81,6 @@ struct TMCEventMenu
     var int iHighlight;
 };
 
-
-struct TMCAlert
-{
-    var int iAlertType;
-    var TText txtTitle;
-    var array<TText> arrText;
-    var array<TLabeledText> arrLabeledText;
-	var TMenu mnuReplies;
-    var TImage imgAlert;
-    var TImage imgAlert2;
-    var TImage imgAlert3;
-    var int iNumber;
-};
 
 var TMCMenu m_kMenu;
 var TMCAlert m_kCurrentAlert;
