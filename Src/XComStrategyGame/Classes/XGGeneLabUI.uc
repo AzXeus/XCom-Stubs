@@ -23,13 +23,6 @@ struct TGeneSubjectList
     var TButtonText btxtChoose;
 };
 
-struct TGeneSubjectList
-{
-    var TText txtTitle;
-    var TTableMenu mnuSlots;
-    var TButtonText btxtChoose;
-};
-
 var TGeneSubjectList m_kSubjectList;
 var TSoldierTable m_kSoldierTable;
 var int m_iHighlightedSlot;
