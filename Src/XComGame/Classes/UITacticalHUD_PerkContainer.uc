@@ -8,6 +8,8 @@ struct TUIPerkInfo
     var string strCharges;
 };
 
+var array<TUIPerkInfo> m_arrPerkData;
+
 DefaultProperties
 {
 }

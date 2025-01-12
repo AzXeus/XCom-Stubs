@@ -24,8 +24,14 @@ struct TSoldierHeader
     var TText txtCritShotMod;
 };
 
+struct TSoldierAbilities
+{
+    var TTableMenu tblAbilities;
+};
+
 var XGStrategySoldier m_kSoldier;
 var TSoldierHeader m_kHeader;
+var TSoldierAbilities m_kAbilities;
 var const localized string m_strLabelStatus;
 var const localized string m_strLabelOffense;
 var const localized string m_strLabelDefense;

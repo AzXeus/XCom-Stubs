@@ -22,3 +22,7 @@ function IScreenMgrInterface GetUIScreen()
 }
 
 static function string ConvertCashToString(int iAmount) {}
+
+function array<string> GetHeaderStrings(array<int> arrCategories) {}
+
+function array<int> GetHeaderStates(array<int> arrCategories) {}
