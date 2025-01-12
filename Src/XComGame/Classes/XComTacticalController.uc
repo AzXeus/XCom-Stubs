@@ -20,3 +20,6 @@ function Vector GetCursorPosition()
 {
 }
 
+simulated function XComPerkManager PERKS()
+{
+}
